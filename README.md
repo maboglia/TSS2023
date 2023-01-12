@@ -4,5 +4,10 @@ Repo del corso Tecnico Sviluppo Software 2023
 ## lezione 01
 
 * introduzione al linguaggio
-* topo
+* tipi di dato
+
+## lezione 02
+
+* tipi primitivi
+* tipi riferimento (oggetti)
 
