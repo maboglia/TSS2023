@@ -1,11 +1,13 @@
 package programma;
 
+import java.util.Scanner;
+
 public class CalcolatriceDemo {
 
 	public static void main(String[] args) {
 		
-		int a = 12;
-		int b = 4;
+		int a = leggiIntero();
+		int b = leggiIntero();
 		
 		double risultato = 0;
 		
@@ -28,7 +30,14 @@ public class CalcolatriceDemo {
 //		risultato = a / b;
 //		System.out.println(risultato);
 		
-	}	
-	
+	}
+
+	private static int leggiIntero() {
+
+		Scanner scannatore = new Scanner(System.in);
+		System.out.println("Inserisci un numero intero");
+		return scannatore.nextInt();
+	}
+
 	
 }
