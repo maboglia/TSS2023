@@ -10,4 +10,6 @@ Repo del corso Tecnico Sviluppo Software 2023
 
 * tipi primitivi
 * tipi riferimento (oggetti)
+* operatori ed espressioni
+* variabili
 
