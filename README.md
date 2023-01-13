@@ -9,6 +9,7 @@ Repo del corso Tecnico Sviluppo Software 2023
 * [programma del corso](https://github.com/maboglia/CorsoJava/blob/master/appunti/000_programma_UF.md)
 * installazione dell'ambiente operativo [JDK](https://www.oracle.com/in/java/technologies/downloads/)
 * [Eclipse IDE](https://www.eclipse.org/downloads/)
+* [Eclipse KB Shortcuts](https://github.com/maboglia/CorsoJava/blob/master/appunti/101_eclipse.md)
 
 
 ## lezione 02
