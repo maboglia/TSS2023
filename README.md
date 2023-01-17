@@ -8,6 +8,7 @@ Repo del corso Tecnico Sviluppo Software 2023
 
 ## lezione 02
 
-* tipi primitivi
+* tipi primitivi: 4 int, 2 reali, 1 char, 1 boolean
+* caso particolare String
 * tipi riferimento (oggetti)
 
