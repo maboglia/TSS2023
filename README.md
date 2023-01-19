@@ -24,3 +24,14 @@ Repo del corso Tecnico Sviluppo Software 2023
 * [variabili](https://github.com/maboglia/CorsoJava/blob/master/appunti/003_variabili.md)
 * [metodi](https://github.com/maboglia/CorsoJava/blob/master/appunti/009_metodi.md)
 
+## lezione 03
+
+* [progetto lancia dadi](workspace/Prj03_LanciaDadi)
+* `model` del dado
+* casting: modifica del tipo di dato
+
+## lezione 04
+
+* metodi ausiliari
+* progetto pietra forbici carta
+* esercizi control-flow (ciclo for)
