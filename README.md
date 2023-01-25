@@ -28,10 +28,25 @@ Repo del corso Tecnico Sviluppo Software 2023
 
 * [progetto lancia dadi](workspace/Prj03_LanciaDadi)
 * `model` del dado
-* casting: modifica del tipo di dato
+* [casting](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/008_cast.md): modifica del tipo di dato
 
 ## lezione 04
 
-* metodi ausiliari
+* [metodi ausiliari](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/009_metodi.md)
 * progetto pietra forbici carta
-* esercizi control-flow (ciclo for)
+* esercizi [control-flow](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/005_cicli.md) (ciclo for)
+
+## lezione 05
+
+* classi model: Libro
+* creazione di oggetti
+* esercizi [control-flow](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/005_cicli.md) (ciclo for)
+* progetto [Libreria](./workspace/Prj05_Libreria/)
+
+## lezione 06
+
+* le [classi](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/010_classi.md) e gli [oggetti](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/010_2_classi_istanze.md)
+* il metodo [costruttore](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/010_3_classi_costruttori.md)
+* usare gli [array](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/006_array.md)
+* progetto [TodoList](./workspace/Prj06_TodoList/)
+
