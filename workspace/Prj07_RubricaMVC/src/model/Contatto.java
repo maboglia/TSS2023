@@ -10,8 +10,8 @@ public class Contatto {
 	/**
 	 * Nome del contatto
 	 */
-	String nome;
-	String numero;
+	private String nome;
+	private String numero;
 
 	/**
 	 * Costruttore del contatto
@@ -27,7 +27,7 @@ public class Contatto {
 	 * Metodo per stampare info sul contatto
 	 * @return Ritorna il contatto in formato string
 	 */
-	public String mostraInfo() {
+	public String toString() {
 		return this.nome + " - " + this.numero;
 	}
 	

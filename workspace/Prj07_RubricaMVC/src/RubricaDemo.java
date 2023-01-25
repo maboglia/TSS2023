@@ -7,12 +7,13 @@ public class RubricaDemo {
 	public static void main(String[] args) {
 
 		boolean gira = true;
-		Rubrica agendaRossa = new Rubrica(1);
+		Rubrica agendaRossa = new Rubrica(4);
 		MioScanner msc = new MioScanner();
 
 		while (gira) {
 			System.out.println("1) aggiungi contatto");
 			System.out.println("2) mostra contatti");
+			System.out.println("3) mostra contatti WEB");
 			System.out.println("9) esci");
 
 			int scelta = msc.getIntero("Fai una scelta");
@@ -26,12 +27,24 @@ public class RubricaDemo {
 			case 2:
 				for (Contatto c : agendaRossa.getContatti()) {
 					if (c != null) {
-						System.out.println(c.mostraInfo());
+						System.out.println(c);
 					} else {
 						System.out.println("---VUOTO---");
 					}
 				}
 				break;
+			case 3:
+				System.out.println("<ul>");
+				for (Contatto c : agendaRossa.getContatti()) {
+					if (c != null) {
+						System.out.println("<li>" +c +"</li>");
+					} else {
+						System.out.println("<li>" +"---VUOTO---" +"</li>");
+					}
+				}
+				System.out.println("</ul>");
+				break;
+
 			case 9:
 				gira = false;
 				break;

@@ -11,7 +11,7 @@ public class Rubrica {
 	}
 	
 	private void delete(int i) {
-		// TODO implementare il metodo per eliminare i contatti
+		this.contatti[i] = null;
 		
 	}
 
