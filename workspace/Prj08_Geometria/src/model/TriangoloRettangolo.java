@@ -2,34 +2,33 @@ package model;
 
 public class TriangoloRettangolo extends Triangolo {
 
+	double base, altezza , ipotenusa;
+
 	public TriangoloRettangolo(Punto a, Punto b, Punto c) {
 		super(a, b, c);
 		// TODO Auto-generated constructor stub
+		this.superficie = this.calcolaSuperficie();
 	}
 
 	@Override
 	public double calcolaSuperficie() {
 
-		double base, altezza, ipotenusa;
 		
-		//ab = 4
-		//ac = 3
-		//cb = 5
+		 ipotenusa = Math.max(ab.lunghezza, Math.max(ac.lunghezza, bc.lunghezza));
+		 altezza = Math.min(ab.lunghezza, Math.min(ac.lunghezza, bc.lunghezza));
+		 base = ab.lunghezza + ac.lunghezza + bc.lunghezza - ipotenusa - altezza;
 		
-		base = ab.lunghezza;//5
-		altezza = ac.lunghezza;//4
-		ipotenusa = bc.lunghezza;//3
+		System.out.println("La formula del triangolo generico dice: " + super.calcolaSuperficie());
+		double area = (base * altezza)/2;
+		System.out.println("La formula del triangolo rettangolo dice: " + area);
 		
-		if (base > ipotenusa) {
-			base = ipotenusa;
-		}
-		if (altezza > ipotenusa) {
-			altezza = ipotenusa;
-		}
-		
-		
+		return area;
+	}
 
-		return super.calcolaSuperficie();
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Triangolo rettangolo superficie " + superficie;
 	}
 
 	

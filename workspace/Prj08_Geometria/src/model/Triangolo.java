@@ -7,6 +7,7 @@ public class Triangolo {
 	double perimetro;
 	double superficie;
 	
+	
 	public Triangolo(Punto a, Punto b, Punto c) {
 		this.a = a;
 		this.b = b;

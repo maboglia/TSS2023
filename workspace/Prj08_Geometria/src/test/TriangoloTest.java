@@ -13,9 +13,11 @@ public class TriangoloTest {
 		Punto c = new Punto(3, 5);
 		
 		Triangolo t = new Triangolo(a, b, c);
+		Triangolo t2 = t;
 		TriangoloRettangolo tr = new TriangoloRettangolo(a, b, c);
 		
 		System.out.println(t);
+		System.out.println(t2);
 		System.out.println(tr);
 
 	}
