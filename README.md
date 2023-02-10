@@ -50,3 +50,6 @@ Repo del corso Tecnico Sviluppo Software 2023
 * usare gli [array](http://www.bogliaccino.it/teaching/slideshow.php?parameter=https://raw.githubusercontent.com/maboglia/CorsoJava/master/appunti/006_array.md)
 * progetto [TodoList](./workspace/Prj06_TodoList/)
 
+## lezione 07
+
+* progetto Rubrica MVC
