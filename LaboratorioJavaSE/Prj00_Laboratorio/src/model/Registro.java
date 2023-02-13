@@ -2,6 +2,7 @@ package model;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,14 +10,17 @@ import java.util.Scanner;
 public class Registro {
 
 	ArrayList<Studente> elenco;
-	int presenti = 0;
-	int assenti = 0;
+	ArrayList<Studente> presenti;
+	ArrayList<Studente> assenti;
 	LocalDate data;
 	
 	
 	public Registro() {
 		this.data = LocalDate.now();
 		this.elenco = new ArrayList<>();
+		this.presenti = new ArrayList<>();
+		this.assenti = new ArrayList<>();
+		
 	
 	}
 
@@ -59,9 +63,9 @@ public class Registro {
 			System.out.println(studente);
 			
 			if (scanner.next().equalsIgnoreCase("s")){
-				presenti++;
+				presenti.add(studente);
 			} else {
-				assenti++;
+				assenti.add(studente);
 			}
 			
 			
@@ -70,9 +74,32 @@ public class Registro {
 	}
 	
 	public void stampaReport() {
-		System.out.println("In data " + data );
-		System.out.println("sono presenti " + presenti);
-		System.out.println("sono assenti " + assenti);
+		
+		try {
+			PrintWriter stampante = new PrintWriter(new File("files/output.txt"));
+
+			stampante.println("In data " + data );
+			stampante.println("sono presenti " + presenti.size());
+			
+			
+			for (Studente studente : presenti) {
+				stampante.println(studente);
+			}
+
+			stampante.println("sono assenti " + assenti.size());
+
+			for (Studente studente : assenti) {
+				stampante.println(studente);
+			}
+			
+			stampante.close();
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("Ho stampato l'elenco nel file output.txt");
 	}
 	
 }

@@ -1,0 +1,19 @@
+In data 2023-02-13
+sono presenti 14
+Studente [nMat=1, nome=Alberto, cognome=Bacco]
+Studente [nMat=2, nome=Alessio, cognome=Capua]
+Studente [nMat=3, nome=Sara, cognome=Carlini]
+Studente [nMat=5, nome=ALBERTO, cognome=DASSISTI]
+Studente [nMat=6, nome=albert, cognome=Escobedo]
+Studente [nMat=7, nome=Ayah, cognome=Ghazawna]
+Studente [nMat=8, nome=Walter, cognome=Guidolin]
+Studente [nMat=9, nome=Tobia, cognome=Marrè]
+Studente [nMat=10, nome=Teresa, cognome=Mastroianni]
+Studente [nMat=11, nome=Joseph Desire, cognome=Mbong Hell]
+Studente [nMat=12, nome=saba, cognome=Moaveninejad]
+Studente [nMat=14, nome=Alex, cognome=Pal]
+Studente [nMat=15, nome=Domenico, cognome=Pugliese]
+Studente [nMat=16, nome=KIRA, cognome=SURINA]
+sono assenti 2
+Studente [nMat=4, nome=Antonio Daniel, cognome=Ciuverca]
+Studente [nMat=13, nome=Micol, cognome=Morsiani]
