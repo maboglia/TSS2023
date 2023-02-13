@@ -31,7 +31,7 @@ public class Registro {
 			String string = scanner.nextLine();
 			//3 spezzo la riga in parole
 			String[] parole = string.split(",");
-			//4 salvo le parole in variabile per copstruire uno studente
+			//4 salvo le parole in variabile per costruire uno studente
 			int nMAt = Integer.parseInt(parole[0]);
 			String nome = parole[1];
 			String cognome = parole[2];
