@@ -9,7 +9,9 @@
 </head>
 <body>
 
-	<h1>Libreria con approccio MVC</h1>
+<%@ include file="menu.jsp" %>
+
+	<h1>Libreria con approccio MVC..</h1>
 
 <table id="tabella">
   <tr>
