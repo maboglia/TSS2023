@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Libreria con approccio REST</h1>
+
+<table id="tabella">
+  <tr>
+    <th>Titolo</th>
+    <th>Autore</th>
+    <th>Genere</th>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+	const TABELLA = document.getElementById("tabella");
+	const URL = "api";
+	
+	fetch(URL)
+		.then(libriJSON => libriJSON.json())
+		.then(libriJS => {
+			for (libro of libriJS){
+				const TR = document.createElement('tr')
+				
+				const TD1 = document.createElement('td')
+				TD1.textContent = libro.titolo				
+				TR.appendChild(TD1)				
+				const TD2 = document.createElement('td')
+				TD2.textContent = libro.autore				
+				TR.appendChild(TD2)				
+				const TD3 = document.createElement('td')
+				TD3.textContent = libro.genere				
+				TR.appendChild(TD3)	
+				
+				TABELLA.appendChild(TR)
+
+			}
+		})
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
