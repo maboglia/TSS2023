@@ -29,7 +29,12 @@ public class LibriMVC extends HttpServlet {
 					break;
 				
 				default:
-					req.setAttribute("elencoLibri", DBLibri.getLibri().stream().limit(20).sorted().toList());
+					req.setAttribute("elencoLibri", DBLibri
+														.getLibri()
+														.stream()
+														.limit(20)
+														.sorted()
+														.toList());
 					break;
 			
 			}
