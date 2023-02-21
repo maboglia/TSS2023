@@ -7,12 +7,14 @@ import java.util.Scanner;
 
 class Gioco{
 	String nome;
-	public Gioco(String nome) {
+	int id;
+	public Gioco(String nome, int id) {
+		this.id = id;
 		this.nome = nome;
 	}
 	
 	public String puntoElenco() {
-		return "<li>" + nome + "</li>";
+		return "<li><a href='?gioco="+id+"'>" + nome + "</a></li>";
 	}
 	
 	
@@ -35,11 +37,12 @@ public class LeggiFile {
 		try {
 			Scanner scanner = new Scanner(f);
 			PrintWriter pw = new PrintWriter(output);
+			int counter = 1;
 			
 			pw.println("<ul>");
 			
 			while( scanner.hasNextLine()) {
-				Gioco g = new Gioco(scanner.nextLine());
+				Gioco g = new Gioco(scanner.nextLine(), counter++);
 				
 				pw.println(g.puntoElenco());
 			}

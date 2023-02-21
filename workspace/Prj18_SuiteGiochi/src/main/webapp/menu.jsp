@@ -1,4 +1,6 @@
-<ul>
+
+
+<ul id="menu">
 <li><a href='?gioco=1'>lancia dadi</a></li>
 <li><a href='?gioco=2'>tris</a></li>
 <li><a href='?gioco=3'>sudoku</a></li>
