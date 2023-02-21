@@ -1,0 +1,9 @@
+lancia dadi
+tris
+sudoku
+wordle
+hangman
+guess the number
+minecraft
+magic the gathering
+warhammer
