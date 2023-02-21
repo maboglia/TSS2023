@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#gallery{
+	display: flex;
+	justify-content: space-between;
+	width : 1024px;
+	flex-wrap: wrap;
+}
+
+.immagine{
+	border: 1px solid red;
+	padding : 1rem;
+}
+
+
+.immagine img{
+	width : 140px;
+}
