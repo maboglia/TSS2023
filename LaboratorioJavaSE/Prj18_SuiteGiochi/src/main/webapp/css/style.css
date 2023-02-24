@@ -115,3 +115,41 @@
             background-color: blueviolet;
         }
         
+        /* codice (@Oscar da sistemare) per stampare tris*/
+		.schemaTris{
+		
+			width: 600px;
+			height: 600px;
+			border: 0px solid darkgrey;
+
+		}        
+        
+        .rigaTris{
+		
+			width: 600px;
+			height: 200px;
+			border: 0px solid darkgrey;
+			display: flex;
+			justify-content: space-between;
+		
+		}        
+        .cellaTris{
+		
+			width: 190px;
+			height: 190px;
+			border: 1px solid darkgrey;
+			font-size: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}        
+        
+        .cellaTris:hover{
+        	background-color: #ccc;
+        }
+        
+        /* codice (@Oscar da sistemare) per stampare tris*/
+        
+        
+        
+        

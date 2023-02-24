@@ -10,8 +10,12 @@
  
  
 %>
- 
- 
+<div class="wrapper"> 
+        
+        <header>
+            <h1><%= request.getAttribute("title") %></h1>
+        </header>
+         
 <div id="dadi">
 	<img src="<%= img1 %>" alt="">
 	<img src="<%= img2 %>" alt="">
@@ -26,4 +30,6 @@
 <h2><%= LanciaDati.risultato %></h2>
 <h2>Vittorie: <%= LanciaDati.vittorie %></h2>
  
+</div>
+
 </div>

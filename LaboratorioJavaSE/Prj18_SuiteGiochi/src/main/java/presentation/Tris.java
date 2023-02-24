@@ -7,19 +7,25 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import controller.SudokuCtrl;
+import controller.TrisCtrl;
+
 /**
  * Servlet implementation class Sudoku
  */
-@WebServlet("/dadi")
-public class LanciaDadi extends HttpServlet {
+@WebServlet("/tris")
+public class Tris extends HttpServlet {
+	
+	TrisCtrl ctrl = new TrisCtrl();
 	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("header.jsp").include(request, response);
 		request.getRequestDispatcher("menu.jsp").include(request, response);
-		request.setAttribute("title", "Lancia Dadi");
+		//request.setAttribute("listaNumeri", ctrl.stampaSeguenza());   
+		request.setAttribute("title", "Tris");
 		//inclusione della view del gioco
-		request.getRequestDispatcher("viewDadi.jsp").include(request, response);
+		request.getRequestDispatcher("viewTris.jsp").include(request, response);
 		
 		
 		request.getRequestDispatcher("footer.jsp").include(request, response);

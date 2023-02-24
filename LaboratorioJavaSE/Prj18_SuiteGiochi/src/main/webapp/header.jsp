@@ -10,4 +10,3 @@
 <body>
 
 
-<h1> <%= request.getAttribute("titolo") %> </h1>
