@@ -1,0 +1,117 @@
+ body {
+            font-family: Avenir, Heveltica, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /*  Se il browser non supporta il modulo grid compare la nota, altrimenti il testo della nota è nascosto */
+        @supports (display: grid) {
+            .note {
+                display: none;
+            }
+        }
+
+        /* Griglia */
+
+        .cell {
+            font-size: calc(1vw + 6px);
+            color: #333;
+            display: grid;
+            grid-template-columns: repeat(9, 3vw);
+            grid-template-rows: repeat(9, 3vw);
+            border-right: 1px solid grey;
+            border-bottom: 1px solid grey;
+
+        }
+
+        /* Griglia small */
+        .cell-sm {
+            font-size: calc(.3vw + 6px);
+            grid-template-columns: repeat(9, 1.5vw);
+            grid-template-rows: repeat(9, 1.5vw);
+        }
+
+        /* fine Griglia */
+
+        /* quadrato numero */
+        .cell div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid grey;
+            border-left: 1px solid grey;
+        }
+
+        /* gestione dei bordi  */
+        .cell div:nth-child(3n) {
+            border-right: 1px solid grey;
+        }
+
+        .cell div:nth-child(n + 19) {
+            border-bottom: 1px solid grey;
+        }
+
+        .cell div:nth-child(n + 28) {
+            border-bottom: 0;
+        }ul#menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: cornflowerblue;
+        }
+
+        #menu a {
+            display: block;
+            padding: 0.325rem .75rem;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #menu a:hover {
+            background-color: blueviolet;
+        }
+
+        .cell div:nth-child(n + 46) {
+            border-bottom: 1px solid grey;
+        }
+
+        .cell div:nth-child(n + 55) {
+            border-bottom: 0;
+        }
+
+        .cell div:nth-child(9n) {
+            border-right: 0;
+        }
+
+        footer a {
+            display: inline-block;
+            text-decoration: none;
+            color: darkorchid;
+        }
+        
+        ul#menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: cornflowerblue;
+        }
+
+        #menu a {
+            display: block;
+            padding: 0.325rem .75rem;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #menu a:hover {
+            background-color: blueviolet;
+        }
+        
