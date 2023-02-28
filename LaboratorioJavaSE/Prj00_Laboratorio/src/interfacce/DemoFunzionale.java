@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 class ComparatoreTitolo implements Comparator<Libro>{
 
@@ -14,6 +15,8 @@ class ComparatoreTitolo implements Comparator<Libro>{
 	}
 	
 }
+
+
 
 
 public class DemoFunzionale {
@@ -27,10 +30,16 @@ public class DemoFunzionale {
 		List<Libro> libri = new ArrayList<>(Arrays.asList(l1, l2, l3));
 		
 		
-		Collections.sort(libri, (o1, o2) -> o1.titolo.compareTo(o2.titolo));
+		//Collections.sort(libri, (o1, o2) -> o1.titolo.compareTo(o2.titolo));
 
-		libri.forEach(l -> System.out.println(l));
 		
+		List<Libro> libri2 = libri
+				.stream()
+				.filter(l -> l.prezzo > 15)
+				.sorted()
+				.toList();
+		
+		System.out.println(libri2.size());
 		
 	}
 

@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><%= request.getAttribute("title") %></title>
-<link href="css/style.css" rel="stylesheet">
+<title>Insert title here</title>
 </head>
 <body>
-
-
+<%= session.getAttribute("segreto") %>
+</body>
+</html>

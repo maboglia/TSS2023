@@ -19,10 +19,10 @@ public class Hangman extends HttpServlet {
 		
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute("title", "Hangman");
 		request.getRequestDispatcher("header.jsp").include(request, response);
 		request.getRequestDispatcher("menu.jsp").include(request, response);
 		//request.setAttribute("listaNumeri", ctrl.stampaSeguenza());   
-		request.setAttribute("title", "Hangman");
 		//inclusione della view del gioco
 		request.getRequestDispatcher("viewHangman.jsp").include(request, response);
 		
