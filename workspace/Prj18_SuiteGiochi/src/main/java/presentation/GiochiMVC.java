@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
+@WebServlet("/index")
 public class GiochiMVC extends HttpServlet {
 
 	private int counterVisite = 0;
@@ -28,7 +28,7 @@ public class GiochiMVC extends HttpServlet {
 
 			switch (req.getParameter("gioco")) {
 			case "1":
-				
+				req.getRequestDispatcher("gioco1.jsp").include(req, resp);;
 				break;
 
 			default:

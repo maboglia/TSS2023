@@ -2,10 +2,10 @@ package model;
 
 public class Dado {
 
-	int facce = 6;
-	String colore = "bianco";
+	private int facce = 6;
+	private String colore = "bianco";
 	
-	int lancio() {
+	public int lancio() {
 		
 		int casuale = 0;
 
