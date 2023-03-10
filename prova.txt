@@ -1,0 +1,629 @@
+.
+├── LaboratorioJavaSE
+│   ├── Prj00_Laboratorio
+│   │   ├── bin
+│   │   │   ├── interfacce
+│   │   │   │   ├── CalasseCheRispettaIlContratto.class
+│   │   │   │   ├── ClasseDemo.class
+│   │   │   │   ├── CollezioneFumetti.class
+│   │   │   │   ├── ComparatoreTitolo.class
+│   │   │   │   ├── Contratto.class
+│   │   │   │   ├── ContrattoVendita.class
+│   │   │   │   ├── DemoFunzionale.class
+│   │   │   │   ├── InterfacciaFunzionale.class
+│   │   │   │   ├── Libro.class
+│   │   │   │   ├── ProgrammazioneFunzionale.class
+│   │   │   │   ├── ProvaFunzionale.class
+│   │   │   │   ├── TestFunzionale$1.class
+│   │   │   │   └── TestFunzionale.class
+│   │   │   ├── letturascrittura
+│   │   │   │   ├── FileInputStreamTest.class
+│   │   │   │   ├── FileOutputStreamTest.class
+│   │   │   │   ├── KiraAscii.class
+│   │   │   │   └── PrintStreamTest.class
+│   │   │   ├── model
+│   │   │   │   ├── Registro.class
+│   │   │   │   └── Studente.class
+│   │   │   ├── networking
+│   │   │   │   └── LetturaCorriere.class
+│   │   │   └── test
+│   │   │       ├── DivinaCommedia.class
+│   │   │       └── RegistroDemo.class
+│   │   ├── files
+│   │   │   ├── commedia.txt
+│   │   │   ├── corriere.html
+│   │   │   ├── output.txt
+│   │   │   ├── Prova.txt
+│   │   │   └── studenti.txt
+│   │   ├── log.txt
+│   │   └── src
+│   │       ├── interfacce
+│   │       │   ├── CalasseCheRispettaIlContratto.java
+│   │       │   ├── ClasseDemo.java
+│   │       │   ├── CollezioneFumetti.java
+│   │       │   ├── Contratto.java
+│   │       │   ├── ContrattoVendita.java
+│   │       │   ├── DemoFunzionale.java
+│   │       │   ├── InterfacciaFunzionale.java
+│   │       │   ├── Libro.java
+│   │       │   ├── ProgrammazioneFunzionale.java
+│   │       │   └── ProvaFunzionale.java
+│   │       ├── letturascrittura
+│   │       │   ├── FileInputStreamTest.java
+│   │       │   ├── FileOutputStreamTest.java
+│   │       │   ├── KiraAscii.java
+│   │       │   └── PrintStreamTest.java
+│   │       ├── model
+│   │       │   ├── Registro.java
+│   │       │   └── Studente.java
+│   │       ├── networking
+│   │       │   └── LetturaCorriere.java
+│   │       └── test
+│   │           ├── DivinaCommedia.java
+│   │           └── RegistroDemo.java
+│   ├── Prj15_GeometriaAstratta
+│   │   ├── bin
+│   │   │   ├── model
+│   │   │   │   ├── Figura.class
+│   │   │   │   ├── Punto.class
+│   │   │   │   ├── Quadrato.class
+│   │   │   │   ├── Rettangolo.class
+│   │   │   │   ├── Segmento.class
+│   │   │   │   ├── Triangolo.class
+│   │   │   │   └── TriangoloRettangolo.class
+│   │   │   └── test
+│   │   │       ├── ProvaGeometria.class
+│   │   │       ├── PuntoTest.class
+│   │   │       ├── RettangoloTest.class
+│   │   │       ├── SegmentoTest.class
+│   │   │       └── TriangoloTest.class
+│   │   └── src
+│   │       ├── model
+│   │       │   ├── Figura.java
+│   │       │   ├── Punto.java
+│   │       │   ├── Quadrato.java
+│   │       │   ├── Rettangolo.java
+│   │       │   ├── Segmento.java
+│   │       │   ├── Triangolo.java
+│   │       │   └── TriangoloRettangolo.java
+│   │       └── test
+│   │           ├── ProvaGeometria.java
+│   │           ├── PuntoTest.java
+│   │           ├── RettangoloTest.java
+│   │           ├── SegmentoTest.java
+│   │           └── TriangoloTest.java
+│   ├── Prj18_SuiteGiochi
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       ├── controller
+│   │   │       │   ├── GiocoCtrl.class
+│   │   │       │   ├── LanciaDati.class
+│   │   │       │   ├── Queue.class
+│   │   │       │   ├── SudokuCtrl2.class
+│   │   │       │   ├── SudokuCtrl.class
+│   │   │       │   └── TrisCtrl.class
+│   │   │       ├── model
+│   │   │       │   ├── Dado.class
+│   │   │       │   └── Gioco.class
+│   │   │       └── presentation
+│   │   │           ├── Cartaforbicisasso.class
+│   │   │           ├── Crucipuzzle.class
+│   │   │           ├── GiochiMVC.class
+│   │   │           ├── GuessNumber.class
+│   │   │           ├── Hangman.class
+│   │   │           ├── LanciaDadi.class
+│   │   │           ├── Memory.class
+│   │   │           ├── Sudoku.class
+│   │   │           ├── Tris.class
+│   │   │           └── Wordle.class
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   ├── controller
+│   │           │   │   ├── GiocoCtrl.java
+│   │           │   │   ├── LanciaDati.java
+│   │           │   │   ├── SudokuCtrl2.java
+│   │           │   │   ├── SudokuCtrl.java
+│   │           │   │   └── TrisCtrl.java
+│   │           │   ├── model
+│   │           │   │   ├── Dado.java
+│   │           │   │   └── Gioco.java
+│   │           │   └── presentation
+│   │           │       ├── Cartaforbicisasso.java
+│   │           │       ├── Crucipuzzle.java
+│   │           │       ├── GiochiMVC.java
+│   │           │       ├── GuessNumber.java
+│   │           │       ├── Hangman.java
+│   │           │       ├── LanciaDadi.java
+│   │           │       ├── Memory.java
+│   │           │       ├── Sudoku.java
+│   │           │       ├── Tris.java
+│   │           │       └── Wordle.java
+│   │           └── webapp
+│   │               ├── css
+│   │               │   └── style.css
+│   │               ├── footer.jsp
+│   │               ├── header.jsp
+│   │               ├── img
+│   │               │   ├── f1.jpg
+│   │               │   ├── f2.jpg
+│   │               │   ├── f3.jpg
+│   │               │   ├── f4.jpg
+│   │               │   ├── f5.jpg
+│   │               │   └── f6.jpg
+│   │               ├── index.jsp
+│   │               ├── js
+│   │               │   └── script.js
+│   │               ├── menu.jsp
+│   │               ├── META-INF
+│   │               │   └── MANIFEST.MF
+│   │               ├── viewCartaForbiciSasso.jsp
+│   │               ├── viewCruciPuzzle.jsp
+│   │               ├── viewDadi.jsp
+│   │               ├── viewGuessNumber.jsp
+│   │               ├── viewHangman.jsp
+│   │               ├── viewMemory.jsp
+│   │               ├── viewSudoku.jsp
+│   │               ├── viewTris.jsp
+│   │               ├── viewWordle.jsp
+│   │               └── WEB-INF
+│   │                   └── lib
+│   ├── Prj19_ProvaChiamateAjax
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── router
+│   │   │           ├── Risponditore.class
+│   │   │           └── Router.class
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   └── router
+│   │           │       ├── Risponditore.java
+│   │           │       └── Router.java
+│   │           └── webapp
+│   │               ├── client.jsp
+│   │               ├── META-INF
+│   │               │   └── MANIFEST.MF
+│   │               ├── paginaSganciata.jsp
+│   │               └── WEB-INF
+│   │                   └── lib
+│   └── Servers
+│       └── Tomcat v10.0 Server at localhost-config
+│           ├── catalina.policy
+│           ├── catalina.properties
+│           ├── context.xml
+│           ├── server.xml
+│           ├── tomcat-users.xml
+│           └── web.xml
+├── LICENSE
+├── materialeDidattico
+│   ├── diagrammi2023.drawio
+│   ├── logo_iel2023.jpg
+│   ├── logo_iel2023.jpg.pdf
+│   ├── TSS2023-loghi.pdf
+│   └── TSS2023_Programmare_Java_.pdf
+├── prova.txt
+├── README.md
+└── workspace
+    ├── MioScanner
+    │   ├── bin
+    │   │   └── main
+    │   │       └── MioScanner.class
+    │   └── src
+    │       └── main
+    │           └── MioScanner.java
+    ├── Prj00_HelloWorld
+    │   ├── bin
+    │   │   └── HelloWorld.class
+    │   └── src
+    │       └── HelloWorld.java
+    ├── Prj01_Laboratorio
+    │   ├── bin
+    │   │   ├── array
+    │   │   │   ├── ArrayInteri.class
+    │   │   │   └── ArrayStringhe.class
+    │   │   ├── cicli
+    │   │   │   ├── ProvaFor.class
+    │   │   │   └── ProvaWhile.class
+    │   │   ├── file
+    │   │   │   ├── Gioco.class
+    │   │   │   └── LeggiFile.class
+    │   │   ├── interfacce
+    │   │   │   ├── Biblioteca.class
+    │   │   │   ├── ComparatoreId.class
+    │   │   │   ├── InterfacciaMoltiMetodi.class
+    │   │   │   ├── InterfacciaUnMetodo.class
+    │   │   │   ├── InterfacciaVuota.class
+    │   │   │   ├── Libro.class
+    │   │   │   ├── LibroDAOImpl.class
+    │   │   │   ├── MiaClasse.class
+    │   │   │   ├── MiaInterfaccia.class
+    │   │   │   ├── ProvaUnMetodo.class
+    │   │   │   ├── Strumento.class
+    │   │   │   └── TuaInterfaccia.class
+    │   │   ├── model
+    │   │   │   ├── CartaDaGioco.class
+    │   │   │   └── CarteDemo.class
+    │   │   └── tipi
+    │   │       ├── TipiInteri.class
+    │   │       └── TipiString.class
+    │   ├── files
+    │   │   ├── giochi.html
+    │   │   └── giochi.txt
+    │   └── src
+    │       ├── array
+    │       │   ├── ArrayInteri.java
+    │       │   └── ArrayStringhe.java
+    │       ├── cicli
+    │       │   ├── ProvaFor.java
+    │       │   └── ProvaWhile.java
+    │       ├── file
+    │       │   └── LeggiFile.java
+    │       ├── interfacce
+    │       │   ├── Biblioteca.java
+    │       │   ├── InterfacciaMoltiMetodi.java
+    │       │   ├── InterfacciaUnMetodo.java
+    │       │   ├── InterfacciaVuota.java
+    │       │   ├── LibroDAOImpl.java
+    │       │   ├── Libro.java
+    │       │   ├── MiaClasse.java
+    │       │   ├── MiaInterfaccia.java
+    │       │   ├── ProvaUnMetodo.java
+    │       │   └── TuaInterfaccia.java
+    │       ├── model
+    │       │   ├── CartaDaGioco.java
+    │       │   └── CarteDemo.java
+    │       └── tipi
+    │           ├── TipiInteri.java
+    │           └── TipiString.java
+    ├── Prj02_Calcolatrice
+    │   ├── bin
+    │   │   └── programma
+    │   │       ├── Calcolatrice.class
+    │   │       └── CalcolatriceDemo.class
+    │   └── src
+    │       └── programma
+    │           ├── CalcolatriceDemo.java
+    │           └── Calcolatrice.java
+    ├── Prj03_LanciaDadi
+    │   ├── bin
+    │   │   └── gioco
+    │   │       ├── Dado.class
+    │   │       ├── InterfacciaGioco.class
+    │   │       └── InterfacciaGiocoEvolution.class
+    │   └── src
+    │       └── gioco
+    │           ├── Dado.java
+    │           ├── InterfacciaGiocoEvolution.java
+    │           └── InterfacciaGioco.java
+    ├── Prj04_PietraForbiciCarta
+    │   ├── bin
+    │   │   └── gioco
+    │   │       └── GiocoPFC.class
+    │   └── src
+    │       └── gioco
+    │           └── GiocoPFC.java
+    ├── Prj05_Libreria
+    │   ├── bin
+    │   │   ├── interfaccia
+    │   │   │   └── LibreriaDemo.class
+    │   │   └── model
+    │   │       └── Libro.class
+    │   └── src
+    │       ├── interfaccia
+    │       │   └── LibreriaDemo.java
+    │       └── model
+    │           └── Libro.java
+    ├── Prj06_TodoList
+    │   ├── bin
+    │   │   ├── logica
+    │   │   │   ├── Lista.class
+    │   │   │   └── Todo.class
+    │   │   └── vista
+    │   │       └── TodoListDemo.class
+    │   └── src
+    │       ├── logica
+    │       │   ├── Lista.java
+    │       │   └── Todo.java
+    │       └── vista
+    │           └── TodoListDemo.java
+    ├── Prj07_RubricaMVC
+    │   ├── bin
+    │   └── src
+    │       ├── controller
+    │       │   └── Rubrica.java
+    │       ├── model
+    │       │   └── Contatto.java
+    │       └── RubricaDemo.java
+    ├── Prj08_Geometria
+    │   ├── bin
+    │   │   ├── model
+    │   │   │   ├── Punto.class
+    │   │   │   ├── Segmento.class
+    │   │   │   ├── Triangolo.class
+    │   │   │   └── TriangoloRettangolo.class
+    │   │   └── test
+    │   │       ├── PuntoTest.class
+    │   │       ├── SegmentoTest.class
+    │   │       └── TriangoloTest.class
+    │   └── src
+    │       ├── model
+    │       │   ├── Punto.java
+    │       │   ├── Segmento.java
+    │       │   ├── Triangolo.java
+    │       │   └── TriangoloRettangolo.java
+    │       └── test
+    │           ├── PuntoTest.java
+    │           ├── SegmentoTest.java
+    │           └── TriangoloTest.java
+    ├── Prj09_GestioneDipendenti
+    │   ├── bin
+    │   │   ├── model
+    │   │   │   ├── Dipendente.class
+    │   │   │   ├── Dirigente.class
+    │   │   │   ├── Fattorino.class
+    │   │   │   └── Impiegato.class
+    │   │   └── test
+    │   │       └── DipendenteTest.class
+    │   ├── files
+    │   │   └── dipendenti.txt
+    │   └── src
+    │       ├── model
+    │       │   ├── Dipendente.java
+    │       │   ├── Dirigente.java
+    │       │   ├── Fattorino.java
+    │       │   └── Impiegato.java
+    │       └── test
+    │           └── DipendenteTest.java
+    ├── Prj10_TodoList2.0
+    │   ├── bin
+    │   │   ├── controller
+    │   │   │   └── TodoCtrl.class
+    │   │   ├── model
+    │   │   │   └── Todo.class
+    │   │   └── view
+    │   │       └── TodoDemo.class
+    │   └── src
+    │       ├── controller
+    │       │   └── TodoCtrl.java
+    │       ├── model
+    │       │   └── Todo.java
+    │       └── view
+    │           └── TodoDemo.java
+    ├── Prj11_Rubrica2.0
+    │   ├── bin
+    │   │   ├── controller
+    │   │   │   └── Rubrica.class
+    │   │   ├── model
+    │   │   │   └── Contatto.class
+    │   │   └── view
+    │   │       └── RubricaDemo.class
+    │   └── src
+    │       ├── controller
+    │       │   └── Rubrica.java
+    │       ├── model
+    │       │   └── Contatto.java
+    │       └── view
+    │           └── RubricaDemo.java
+    ├── Prj12_HelloTomcat
+    │   ├── build
+    │   │   └── classes
+    │   │       ├── controller
+    │   │       │   ├── MiaServlet.class
+    │   │       │   └── TodoCtrl.class
+    │   │       └── model
+    │   │           └── Todo.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   ├── MiaServlet.java
+    │           │   │   └── TodoCtrl.java
+    │           │   └── model
+    │           │       └── Todo.java
+    │           └── webapp
+    │               ├── footer.jsp
+    │               ├── header.jsp
+    │               ├── index.jsp
+    │               ├── menu.jsp
+    │               ├── META-INF
+    │               │   └── MANIFEST.MF
+    │               └── todolist.jsp
+    ├── Prj13_Autosalone
+    │   ├── build
+    │   │   └── classes
+    │   │       ├── controller
+    │   │       │   ├── Auto.class
+    │   │       │   ├── Camper.class
+    │   │       │   ├── Inizializza.class
+    │   │       │   ├── Moto.class
+    │   │       │   └── Veicoli.class
+    │   │       ├── database
+    │   │       │   └── DB.class
+    │   │       └── model
+    │   │           ├── Auto.class
+    │   │           ├── Camper.class
+    │   │           ├── Moto.class
+    │   │           └── Veicolo.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   ├── Auto.java
+    │           │   │   ├── Camper.java
+    │           │   │   ├── Inizializza.java
+    │           │   │   ├── Moto.java
+    │           │   │   └── Veicoli.java
+    │           │   ├── database
+    │           │   │   └── DB.java
+    │           │   └── model
+    │           │       ├── Auto.java
+    │           │       ├── Camper.java
+    │           │       ├── Moto.java
+    │           │       └── Veicolo.java
+    │           └── webapp
+    │               ├── footer.jsp
+    │               ├── form.jsp
+    │               ├── header.jsp
+    │               ├── index.html
+    │               ├── menu.jsp
+    │               ├── META-INF
+    │               │   └── MANIFEST.MF
+    │               └── table.jsp
+    ├── Prj13_Autosalone_old
+    │   ├── build
+    │   │   └── classes
+    │   │       ├── controller
+    │   │       │   ├── Auto.class
+    │   │       │   ├── Camper.class
+    │   │       │   ├── Moto.class
+    │   │       │   └── Veicoli.class
+    │   │       ├── database
+    │   │       │   └── DB.class
+    │   │       └── model
+    │   │           ├── Auto.class
+    │   │           ├── Camper.class
+    │   │           ├── Moto.class
+    │   │           └── Veicolo.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   ├── Auto.java
+    │           │   │   ├── Camper.java
+    │           │   │   ├── Moto.java
+    │           │   │   └── Veicoli.java
+    │           │   ├── database
+    │           │   │   └── DB.java
+    │           │   └── model
+    │           │       ├── Auto.java
+    │           │       ├── Camper.java
+    │           │       ├── Moto.java
+    │           │       └── Veicolo.java
+    │           └── webapp
+    │               ├── footer.jsp
+    │               ├── header.jsp
+    │               ├── index.html
+    │               ├── menu.jsp
+    │               └── META-INF
+    │                   └── MANIFEST.MF
+    ├── Prj14_ListaSpesa
+    │   ├── build
+    │   │   └── classes
+    │   │       └── controller
+    │   │           └── Compra.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   └── controller
+    │           │       └── Compra.java
+    │           └── webapp
+    │               ├── index.jsp
+    │               └── META-INF
+    │                   └── MANIFEST.MF
+    ├── Prj16_Libreria
+    │   ├── build
+    │   │   └── classes
+    │   ├── files
+    │   │   ├── libri.csv
+    │   │   └── output.txt
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   ├── LibriMVC.java
+    │           │   │   └── LibriREST.java
+    │           │   ├── database
+    │           │   │   ├── DBLibri.java
+    │           │   │   └── LibreriaDemo.java
+    │           │   └── model
+    │           │       └── Libro.java
+    │           └── webapp
+    │               ├── libriMVC.jsp
+    │               ├── libriREST.html
+    │               ├── menu.jsp
+    │               ├── META-INF
+    │               │   └── MANIFEST.MF
+    │               └── WEB-INF
+    │                   └── files
+    │                       └── libri.csv
+    ├── Prj17_MaschereCarnevale
+    │   ├── build
+    │   │   └── classes
+    │   │       ├── controller
+    │   │       │   ├── Coriandoli.class
+    │   │       │   └── MaschereMVC.class
+    │   │       ├── database
+    │   │       │   └── DBMaschere.class
+    │   │       └── model
+    │   │           └── Maschera.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   ├── Coriandoli.java
+    │           │   │   └── MaschereMVC.java
+    │           │   ├── database
+    │           │   │   └── DBMaschere.java
+    │           │   └── model
+    │           │       └── Maschera.java
+    │           └── webapp
+    │               ├── css
+    │               │   └── style.css
+    │               ├── footer.jsp
+    │               ├── form.jsp
+    │               ├── foto.html
+    │               ├── header.jsp
+    │               ├── js
+    │               │   └── script.js
+    │               ├── listaMaschere.jsp
+    │               ├── menu.jsp
+    │               └── META-INF
+    │                   └── MANIFEST.MF
+    ├── Prj18_SuiteGiochi
+    │   ├── build
+    │   │   └── classes
+    │   │       ├── controller
+    │   │       │   └── GiocoCtrl.class
+    │   │       ├── model
+    │   │       │   ├── Dado.class
+    │   │       │   └── Gioco.class
+    │   │       └── presentation
+    │   │           └── GiochiMVC.class
+    │   └── src
+    │       └── main
+    │           ├── java
+    │           │   ├── controller
+    │           │   │   └── GiocoCtrl.java
+    │           │   ├── model
+    │           │   │   ├── Dado.java
+    │           │   │   └── Gioco.java
+    │           │   └── presentation
+    │           │       └── GiochiMVC.java
+    │           └── webapp
+    │               ├── css
+    │               │   └── style.css
+    │               ├── footer.jsp
+    │               ├── header.jsp
+    │               ├── img
+    │               │   ├── f1.jpg
+    │               │   ├── f2.jpg
+    │               │   ├── f3.jpg
+    │               │   ├── f4.jpg
+    │               │   ├── f5.jpg
+    │               │   └── f6.jpg
+    │               ├── js
+    │               │   └── script.js
+    │               ├── menu.jsp
+    │               └── META-INF
+    │                   └── MANIFEST.MF
+    └── Servers
+        └── Tomcat v10.0 Server at localhost-config
+            ├── catalina.policy
+            ├── catalina.properties
+            ├── context.xml
+            ├── server.xml
+            ├── tomcat-users.xml
+            └── web.xml
+
+247 directories, 379 files
