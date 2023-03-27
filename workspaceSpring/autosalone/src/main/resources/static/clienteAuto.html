@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+
+    <form action="api/auto" method="post">
+    </form>
+        
+        <input type="text" name="marca" id="marca" placeholder="marca"><br>
+        <input type="text" name="modello" id="modello" placeholder="modello"><br>
+        <input type="number" name="prezzo" id="prezzo" placeholder="prezzo"><br>
+        <button id="btnInvia">Aggiungi</button>
+        
+    <table id="tabella">
+        <tr>
+            <th>marca</th>
+            <th>modello</th>
+            <th>prezzo</th>
+        </tr>
+    </table>
+</div>
+<script>
+
+    const URL = "api/auto";
+    const TABELLA = document.getElementById("tabella")
+    const BTN = document.getElementById("btnInvia")
+    
+    BTN.onclick = function () {
+        
+        let obj = {
+            marca : document.getElementById('marca').value,
+            modello : document.getElementById('modello').value,
+            prezzo : document.getElementById('prezzo').value
+        }
+
+        fetch(URL, {
+            method : 'POST',
+            body : JSON.stringify(obj),
+            headers: {
+                "Content-Type": "application/json",
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              }
+        }).then(res => {
+            console.log(res.text())
+            init()
+        })
+
+    }
+
+
+    document.body.onload = function () {
+        console.log('funziona')
+    	init()
+    }
+
+    function init() {
+    
+        fetch(URL).then(resp => resp.json())
+            .then(resp => {
+                for (const auto of resp) {
+                    
+                    const TR = document.createElement('tr')
+                    const TD1 = document.createElement('td')
+                    const TD2 = document.createElement('td')
+                    const TD3 = document.createElement('td')
+
+                    TD1.textContent = auto.marca
+                    TD2.textContent = auto.modello
+                    TD3.textContent = auto.prezzo
+
+                    TR.append(TD1);
+                    TR.append(TD2);
+                    TR.append(TD3);
+
+                    TABELLA.append(TR)
+
+                }
+
+
+            })
+
+
+    }
+   
+
+
+
+</script>
+
+</body>
+</html>
