@@ -30,7 +30,7 @@ public class BibliotecaMVC {
 		return "libri";
 	}
 	
-	@GetMapping("libri/{id}")
+	@GetMapping("libri/{autore}/{genere}")
 	public String getLibro(@PathVariable int id, Model m) {
 		m.addAttribute("libro",  service.getLibroById(id)) ;
 		return "dettaglio";

@@ -28,7 +28,7 @@ public class BibliotecaREST {
 	}
 	
 	@GetMapping("libri/{id}")
-	public Libro getLibro(@PathVariable int id) {
+	public Libro getLibro(@PathVariable("id") int id) {
 		return service.getLibroById(id);
 	}
 	
