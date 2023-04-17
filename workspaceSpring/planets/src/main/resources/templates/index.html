@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${titolo}">Home Page</h1>
+
+	<ul>
+		<li th:each="pianeta: ${pianeti}">
+			 
+			<a href="" th:href="@{/canc/}+${pianeta.id}" th:text="${pianeta.nome}">Canc</a>
+		</li>
+	</ul>
+
+
+</body>
+</html>
