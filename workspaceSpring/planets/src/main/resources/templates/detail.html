@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${pianeta.nome}"></h1>
+
+	<div
+		th:object="${pianeta}"
+	>
+	
+		<h2 th:text="*{diametro}"></h2>
+		<h2 th:text="*{distanza}"></h2>
+		<h2 th:text="*{satelliti}"></h2>
+	
+	
+	</div>
+
+
+</body>
+</html>

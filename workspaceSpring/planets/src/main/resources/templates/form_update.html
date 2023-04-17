@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Update planet</h1>
+	
+
+	<form action="#"  th:action="@{/update}" th:object="${pianeta}"  method="post">
+	
+		<input type="hidden" th:field="*{id}">
+		<input type="text" th:field="*{nome}" placeholder="nome"><br>
+		<input type="number" th:field="*{diametro}" placeholder="diametro"><br>
+		<input type="number" th:field="*{distanza}" placeholder="distanza"><br>
+		<input type="number" th:field="*{satelliti}" placeholder="satelliti"><br>
+		<input type="submit" value="Update">
+	
+	</form>
+
+</body>
+</html>

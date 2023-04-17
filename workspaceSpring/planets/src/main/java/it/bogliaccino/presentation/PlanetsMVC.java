@@ -37,6 +37,22 @@ public class PlanetsMVC {
 		return "form_add";
 	}
 	
+	
+	@GetMapping(value = {"modifica/{id}", "upd/{id}", "mostraupdate/{id}"})
+	public String mostraUpdateForm(@PathVariable int id, Model m) {
+		m.addAttribute("pianeta", service.getPianetaById(id));
+		return "form_update";
+	}
+	
+	
+	@GetMapping(value = {"pianeti/{id}", "view/{id}"})
+	public String getPianetaById(@PathVariable int id, Model m) {
+		m.addAttribute("pianeta", service.getPianetaById(id));
+		return "detail";
+	}
+	
+	
+	
 	@GetMapping("canc/{id}")
 	public String deletePianeta(@PathVariable int id) {
 		service.deletePianeta(id);
@@ -45,6 +61,12 @@ public class PlanetsMVC {
 	
 	
 	
+	
+	@PostMapping("update")
+	public String updatePianeta(Pianeta p) {
+		service.updatePianeta(p);
+		return "redirect:/";
+	}
 	
 	@PostMapping("add")
 	public String addPianeta(Pianeta p) {

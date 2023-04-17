@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -10,8 +10,10 @@
 
 	<ul>
 		<li th:each="pianeta: ${pianeti}">
-			 
-			<a href="" th:href="@{/canc/}+${pianeta.id}" th:text="${pianeta.nome}">Canc</a>
+
+			<a href="" th:href="@{/pianeti/}+${pianeta.id}" th:text="${pianeta.nome}"></a>
+			<a href="" th:href="@{/modifica/}+${pianeta.id}">&#128393;</a>
+			<a href="" th:href="@{/canc/}+${pianeta.id}">&#128465;</a>
 		</li>
 	</ul>
 
