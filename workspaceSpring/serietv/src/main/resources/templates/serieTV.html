@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+
+	<h1 th:text="${titolo}">Serie TV</h1>
+ <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titolo</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody id="corpo">
+        	<tr th:each="serie : ${elenco}">
+        		<td th:text="${serie.id}"></td>
+        		<td th:text="${serie.titolo}"></td>
+        		<td th:text="${serie.rating}"></td>
+        	</tr>
+        
+        
+        </tbody>
+    </table>
+
+
+
+</div>
+
+</body>
+</html>
