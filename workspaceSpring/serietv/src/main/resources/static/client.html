@@ -10,6 +10,7 @@
 <div class="container">
 
     <div class="">
+		<h2>Aggiungi serie</h2>
         <input class="form-control" type="text" placeholder="titolo" id="titolo"><br>
         <input class="form-control" type="number" placeholder="rating" id="rating"><br>
         <input class="form-control" type="text" placeholder="locandina" id="locandina"><br>
@@ -72,8 +73,8 @@
     	for(const g of genere)
     		{
 	    		const obj = {}
-	    		obj.nome = genere
-	    		generi.push(objGenere)
+	    		obj.nome = g
+	    		generi.push(obj)
     		}
     	//console.log(generi)
     	
