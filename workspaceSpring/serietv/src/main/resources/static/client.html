@@ -14,6 +14,7 @@
         <input class="form-control" type="number" placeholder="rating" id="rating"><br>
         <input class="form-control" type="text" placeholder="locandina" id="locandina"><br>
         <input class="form-control" type="text" placeholder="descrizione" id="descrizione"><br>
+        <input class="form-control" type="text" placeholder="genere" id="genere"><br>
         <button id="btnAdd">Add Serie</button>
     </div>
 
@@ -40,7 +41,7 @@
 
     document.getElementById('titolo').addEventListener('blur', function () {
         
-        console.log(this.value);
+        //console.log(this.value);
 
         fetch("https://api.tvmaze.com/singlesearch/shows?q=" + this.value)
             .then(r => r.json())
@@ -50,6 +51,7 @@
                 document.getElementById('rating').value = r.rating.average
                 document.getElementById('locandina').value = r.image.medium
                 document.getElementById('descrizione').value = r.summary
+                document.getElementById('genere').value = r.genres.join(",")
 
 
                 console.log(r);
@@ -58,18 +60,34 @@
 
     })
 
-
+    
+   
     BTN.addEventListener('click', function () {
         
+    	const generi = []
+    	
+        let genere =  document.getElementById('genere').value.split(",")
+    	console.log(genere)
+    	
+    	for(const g of genere)
+    		{
+	    		const obj = {}
+	    		obj.nome = genere
+	    		generi.push(objGenere)
+    		}
+    	//console.log(generi)
+    	
+         
         let nuova = {
             titolo: document.getElementById('titolo').value,
             rating: document.getElementById('rating').value,
             locandina: document.getElementById('locandina').value,
-            descrizione: document.getElementById('descrizione').value
+            descrizione: document.getElementById('descrizione').value,
+            genere: generi
         };
-
-        console.log(nuova);
-
+        
+    	  
+    	  
         fetch(URL, {
             method: 'post',
             headers: {
