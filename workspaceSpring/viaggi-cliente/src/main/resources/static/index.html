@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agenzia viaggi</title>
+</head>
+<body>
+<div class="container">
+	<h1>I nostri viaggi</h1>
+
+	<div id="output"></div>
+
+
+		<table class="table">
+			<thead>
+			  <tr>
+			    <th>Destinazione</th>
+			    <th>Durata</th>
+			    <th>Prezzo</th>
+			    <th>Prenota</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  
+			</tbody>
+		</table>
+
+</div>
+
+<script type="text/javascript">
+
+	const URL = "/api/viaggi";
+	
+	fetch(URL)
+		.then(res => res.json())
+		.then(res => {
+			
+			for(const viaggio of res){
+				
+				const TR = document.createElement('tr')
+				const TD1 = document.createElement('td')
+				TD1.textContent = viaggio.destinazione
+				const TD2 = document.createElement('td')
+				TD2.textContent = viaggio.giorni
+				const TD3 = document.createElement('td')
+				TD3.textContent = viaggio.prezzo
+				const TD4 = document.createElement('td')
+				const BUTTON = document.createElement('button')
+				BUTTON.textContent = "Scegli"
+				BUTTON.addEventListener('click', function(){
+					console.log("Hai scelto il viaggio ", viaggio.id);
+					
+					fetch(URL + '/' + viaggio.id)
+						.then(res => res.json())
+						.then(v => {
+							const OUTPUT = document.getElementById('output');
+							const INPUT1 = document.createElement('input')
+							INPUT1.setAttribute('type', 'text')
+							INPUT1.setAttribute('id', 'destinazione')
+							INPUT1.value = v.destinazione
+							const INPUT2 = document.createElement('input')
+							INPUT2.setAttribute('id', 'giorni')
+							INPUT2.setAttribute('type', 'number')
+							INPUT2.value = v.giorni
+							const INPUT3 = document.createElement('input')
+							INPUT3.setAttribute('id', 'prezzo')
+							INPUT3.setAttribute('type', 'number')
+							INPUT3.value = v.prezzo
+							const INPUT4 = document.createElement('input')
+							INPUT4.setAttribute('id', 'nomeCliente')
+							INPUT4.setAttribute('type', 'text')
+							INPUT4.setAttribute('placeholder', 'nome cliente')
+							const INPUT5 = document.createElement('input')
+							INPUT5.setAttribute('id', 'viaggiatori')
+							INPUT5.setAttribute('type', 'number')
+							INPUT5.setAttribute('placeholder', 'numero viaggiatori')
+							
+							const BUTTON2 = document.createElement('button')
+							BUTTON2.textContent = "Prenota"
+							BUTTON2.addEventListener('click', function(){
+								
+								let prenotazione = {
+										
+								}
+								
+								fetch("/api/prenotazioni", {
+									method: 'POST',
+									body: JSON.stringify(prenotazione)
+								}).then(res => res.json())
+									.then(p => console.log(p))
+								
+								
+								
+							})
+							
+							
+							
+							OUTPUT.innerHTML = ''
+							OUTPUT.append(INPUT1,INPUT2,INPUT3,INPUT4,INPUT5)
+							
+							console.log(v)
+							
+						})
+					
+					
+				})
+				TD4.append(BUTTON)
+				TR.append(TD1, TD2, TD3, TD4)
+				document.querySelector('table tbody').append(TR)
+				
+			}
+			
+			
+			
+		})
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

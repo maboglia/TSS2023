@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${titolo}">Insert title here</title>
+</head>
+<body>
+	
+	<div class="container">
+	
+		<h1 th:text="${titolo}">Elenco viaggi</h1>
+		
+		<table class="table">
+		<thead>
+		  <tr>
+		    <th>Destinazione</th>
+		    <th>Durata</th>
+		    <th>Prezzo</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr th:each="v : ${elencoViaggi}">
+		    <td th:text="${v.destinazione}">Row 1: Col 1</td>
+		    <td th:text="${v.giorni}">Row 1: Col 2</td>
+		    <td th:text="${v.prezzo}">Row 1: Col 2</td>
+		  </tr>
+		</tbody>
+		</table>
+
+	
+	
+	</div>
+</body>
+</html>
