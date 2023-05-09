@@ -10,7 +10,7 @@
 	
 		<h1 th:text="${titolo}">Elenco viaggi</h1>
 		
-		<form action="viaggi" method="post">
+		<form action="viaggi" method="post" enctype="multipart/form-data">
 		
 		<input type="hidden" name="id" value="0">
 		
@@ -25,6 +25,11 @@
 		<div>
 			<label for="dest">prezzo</label>		
 			<input type="number" name="prezzo" id="prezzo" placeholder="prezzo">
+		</div>
+		
+		<div>
+			<label for="documento">allega documenti</label>		
+			<input type="file" name="documento" id="documento" placeholder="allega documento">
 		</div>
 		
 		<input type="submit" value="add">

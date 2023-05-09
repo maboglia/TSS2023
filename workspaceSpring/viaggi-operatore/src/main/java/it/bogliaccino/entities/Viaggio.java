@@ -18,7 +18,15 @@ public class Viaggio {
 	private int giorni;
 	private double prezzo;
 	
+	private String percorsoFile;
 	
+	
+	public String getPercorsoFile() {
+		return percorsoFile;
+	}
+	public void setPercorsoFile(String percorsoFile) {
+		this.percorsoFile = percorsoFile;
+	}
 	public int getId() {
 		return id;
 	}
