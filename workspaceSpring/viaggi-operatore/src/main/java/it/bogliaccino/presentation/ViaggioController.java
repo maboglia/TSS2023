@@ -46,10 +46,25 @@ public class ViaggioController {
 	@GetMapping("/immagini/{filename:.+}")
 	@ResponseBody
 	public ResponseEntity<Resource> mostraFile(@PathVariable String filename){
-		System.out.println("-------------------------------" + filename);
+		//System.out.println("-------------------------------" + filename);
 		Resource file = storage.loadAsResource(filename);
 		
-		return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG)
+		return ResponseEntity
+				.ok()
+				.contentType(MediaType.IMAGE_JPEG)
+				.body(file);
+		
+	}
+	
+	@GetMapping("/documenti/{filename:.+}")
+	@ResponseBody
+	public ResponseEntity<Resource> mostraPdf(@PathVariable String filename){
+		//System.out.println("-------------------------------" + filename);
+		Resource file = storage.loadAsResource(filename);
+		
+		return ResponseEntity
+				.ok()
+				.contentType(MediaType.APPLICATION_PDF)
 				.body(file);
 		
 	}
